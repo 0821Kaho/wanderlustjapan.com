@@ -1,0 +1,30 @@
+{
+  "common": {
+    "title": "Wanderlust Japan",
+    "description": "Go beyond the must-sees—discover Japan's hidden gems and lesser-known wonders!",
+    "chooseRegion": "Choose Your Region",
+    "search": "Search",
+    "searchPlaceholder": "Search places, activities...",
+    "noResults": "No results found",
+    "help": "Help? (10% fee)",
+    "close": "Close"
+  },
+  "navigation": {
+    "back": "Back",
+    "backToRegions": "Back to Regions"
+  },
+  "regions": {
+    "title": "Where would you like to go?",
+    "subtitle": "Choose your destination in Japan",
+    "base": "Base",
+    "dayTrips": "Day-Trip Areas"
+  },
+  "activities": {
+    "title": "Activities",
+    "subtitle": "Choose from our curated activities",
+    "duration": "Duration",
+    "price": "Price",
+    "bookNow": "Book Now",
+    "help": "Help? (10% fee)"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "common": {
+    "title": "ワンダーラスト・ジャパン",
+    "description": "定番スポットを超えて—日本の隠れた名所と知られざる魅力を発見しよう！",
+    "chooseRegion": "地域を選ぶ",
+    "search": "検索",
+    "searchPlaceholder": "場所やアクティビティを検索...",
+    "noResults": "検索結果が見つかりません",
+    "help": "サポート？（10%手数料）",
+    "close": "閉じる"
+  },
+  "navigation": {
+    "back": "戻る",
+    "backToRegions": "地域選択に戻る"
+  },
+  "regions": {
+    "title": "どちらへ行きたいですか？",
+    "subtitle": "日本の目的地を選んでください",
+    "base": "拠点",
+    "dayTrips": "日帰り観光地"
+  },
+  "activities": {
+    "title": "アクティビティ",
+    "subtitle": "厳選されたアクティビティから選択",
+    "duration": "所要時間",
+    "price": "料金",
+    "bookNow": "予約する",
+    "help": "サポート？（10%手数料）"
+  }
+}

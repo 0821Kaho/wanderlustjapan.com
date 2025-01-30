@@ -1,0 +1,16 @@
+{
+  "himeji-castle": {
+    "id": "himeji-castle",
+    "name": "Himeji Castle",
+    "description": "The most spectacular original castle in Japan, representing the finest example of Japanese castle architecture",
+    "image": "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=800&auto=format&fit=crop",
+    "coordinates": { "lat": 34.8394, "lng": 134.6939 }
+  },
+  "osaka-castle": {
+    "id": "osaka-castle",
+    "name": "Osaka Castle",
+    "description": "One of the most famous landmarks in Japan, playing a major role in the unification of Japan",
+    "image": "https://images.unsplash.com/photo-1590253232072-2e5dee067761?w=800&auto=format&fit=crop",
+    "coordinates": { "lat": 34.6873, "lng": 135.5262 }
+  }
+}

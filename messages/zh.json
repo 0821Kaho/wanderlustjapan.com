@@ -1,0 +1,30 @@
+{
+  "common": {
+    "title": "日本漫游",
+    "description": "超越必看景点—发现日本的隐藏瑰宝和鲜为人知的奇迹！",
+    "chooseRegion": "选择地区",
+    "search": "搜索",
+    "searchPlaceholder": "搜索地点和活动...",
+    "noResults": "未找到结果",
+    "help": "需要帮助？（10%费用）",
+    "close": "关闭"
+  },
+  "navigation": {
+    "back": "返回",
+    "backToRegions": "返回地区选择"
+  },
+  "regions": {
+    "title": "想去哪里？",
+    "subtitle": "选择您在日本的目的地",
+    "base": "基地",
+    "dayTrips": "一日游景点"
+  },
+  "activities": {
+    "title": "活动",
+    "subtitle": "从精选活动中选择",
+    "duration": "时长",
+    "price": "价格",
+    "bookNow": "立即预订",
+    "help": "需要帮助？（10%费用）"
+  }
+}

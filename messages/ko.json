@@ -1,0 +1,31 @@
+{
+    "common": {
+      "title": "원더러스트 재팬",
+      "description": "유명 관광지만 둘러보기엔 부족하죠—숨겨진 보석 같은 일본의 매력을 발견해보세요!",
+      "chooseRegion": "지역 선택",
+      "search": "검색",
+      "searchPlaceholder": "장소, 액티비티 검색...",
+      "noResults": "검색 결과가 없습니다",
+      "help": "도움? (수수료 10%)",
+      "close": "닫기"
+    },
+    "navigation": {
+      "back": "뒤로",
+      "backToRegions": "지역 목록으로 돌아가기"
+    },
+    "regions": {
+      "title": "어디로 가실 건가요?",
+      "subtitle": "일본 내 여행지를 선택해보세요",
+      "base": "거점",
+      "dayTrips": "당일치기 여행지"
+    },
+    "activities": {
+      "title": "액티비티",
+      "subtitle": "엄선된 액티비티를 선택하세요",
+      "duration": "소요 시간",
+      "price": "가격",
+      "bookNow": "지금 예약",
+      "help": "도움? (수수료 10%)"
+    }
+  }
+  
