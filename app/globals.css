@@ -8,12 +8,22 @@
   --background-end-rgb: 4, 39, 89;
 }
 
+/* iOS Safe Area Fixes */
 body {
+  margin: 0;
+  min-height: 100vh;
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-start-rgb));
-  min-height: 100vh;
   opacity: 1 !important;
   visibility: visible !important;
+}
+
+/* Add safe-area-fix utility class */
+.safe-area-fix {
+  padding-top: env(safe-area-inset-top);
+  padding-right: env(safe-area-inset-right);
+  padding-bottom: env(safe-area-inset-bottom);
+  padding-left: env(safe-area-inset-left);
 }
 
 @layer base {
