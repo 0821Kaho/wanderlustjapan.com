@@ -39,7 +39,8 @@ export default function ActivitiesClient({
           Choose from our curated activities
         </p>
 
-        <div className="grid gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {/* カードグリッド：gapを小さく */}
+        <div className="grid gap-2 sm:gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {activities.map((activity) => (
             <div
               key={activity.id}
@@ -51,7 +52,9 @@ export default function ActivitiesClient({
                   alt={activity.name}
                   className="h-full w-full object-cover transition duration-300 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                {/* 黒オーバーレイを削除したい場合はコメントアウト */}
+                {/* <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" /> */}
+
                 <div className="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 right-3 sm:right-4 flex items-center justify-between text-white">
                   <div className="rounded-full bg-blue-600 px-2 sm:px-3 py-0.5 sm:py-1 text-xs sm:text-sm">
                     {activity.duration}
@@ -61,19 +64,23 @@ export default function ActivitiesClient({
                   </div>
                 </div>
               </div>
-              <div className="p-4 sm:p-6">
+
+              {/* カード内余白を小さく */}
+              <div className="p-2 sm:p-3">
                 <h2 className="mb-2 text-lg sm:text-xl font-semibold text-gray-900">
                   {activity.name}
                 </h2>
                 <p className="mb-4 text-xs sm:text-sm text-gray-600">
                   {activity.description}
                 </p>
+
                 <div className="flex flex-col gap-2 sm:gap-3">
                   <button
                     onClick={() => openExternalLink(activity.bookingUrl)}
                     className="flex items-center justify-center gap-1.5 sm:gap-2 
                                rounded-full bg-blue-600 px-3 sm:px-4 py-2 sm:py-2.5 
-                               text-sm font-medium text-white transition hover:bg-blue-700"
+                               text-sm font-medium text-white 
+                               transition hover:bg-blue-700"
                   >
                     <ExternalLink className="h-4 w-4" />
                     Book Now
@@ -81,18 +88,20 @@ export default function ActivitiesClient({
                   <button
                     onClick={() => openExternalLink(activity.helpUrl)}
                     className="flex items-center justify-center gap-1.5 sm:gap-2 
-                               rounded-full bg-green-600 px-3 sm:px-4 py-2 sm:py-2.5 
-                               text-sm font-medium text-white transition hover:bg-green-700"
+                               rounded-full bg-green-600 px-3 sm:px-4 py-2 sm:py-2.5
+                               text-sm font-medium text-white 
+                               transition hover:bg-green-700"
                   >
                     <MessageCircle className="h-4 w-4" />
                     Help? (10% fee)
                   </button>
                 </div>
               </div>
-            </div>
+            </div> 
           ))}
         </div>
       </div>
     </main>
   );
 }
+

@@ -1,3 +1,5 @@
+// /lib/types.ts
+
 export type Region = {
   id: string;
   name: string;
@@ -42,4 +44,11 @@ export type Activity = {
   duration: string;
   bookingUrl: string;
   helpUrl: string;
+
+  /** 
+   * 新たに追加：このアクティビティが所属する place のID。
+   * Activity データで直接 place を参照したい場合に使用する。 
+   * ない場合は省略可能。
+   */
+  placeId?: string;
 };

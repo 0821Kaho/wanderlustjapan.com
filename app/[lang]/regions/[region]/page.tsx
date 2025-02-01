@@ -1,109 +1,105 @@
-import { i18n } from '@/lib/i18n-config'; // Edge-friendly config (no Node modules)
-import { REGIONS } from '@/lib/constants';
-import RegionContent from './region-content';
-import { Metadata } from 'next';
+"use client";
 
-/**
- * Generate static params for *all* combos of [lang] + [region].
- * Example: /en/regions/kanto, /ja/regions/kansai, etc.
- */
-export function generateStaticParams() {
-  return i18n.locales.flatMap((locale) =>
-    REGIONS.map((r) => ({
-      lang: locale,
-      region: r.id,
-    }))
-  );
-}
+import { useParams } from "next/navigation";
+import { REGIONS, CATEGORIES } from "@/lib/constants";
+import Link from "next/link";
+/* いろんなアイコンをインポート */
+import {
+  Mountain,
+  Landmark,
+  Brush,
+  Pizza,
+  FerrisWheel,
+  ShoppingBag,
+  Building2,
+  Baby,
+  Flower,   // ← SpaやLotusがない場合、Flowerなど別のアイコンを代用
+  Dumbbell,
+  Bus,
+  Gift,
+} from "lucide-react";
 
-/**
- * Dynamically create SEO metadata for each region (and optional locale).
- */
-export function generateMetadata({
-  params,
-}: {
-  params: { lang: string; region: string };
-}): Metadata {
-  const region = REGIONS.find((r) => r.id === params.region);
+export default function RegionDetailPage() {
+  const params = useParams();
+  const lang = params.lang as string;
+  const regionId = params.region as string;
 
+  const region = REGIONS.find((r) => r.id === regionId);
   if (!region) {
-    return {
-      title: 'Region Not Found',
-      description: 'The requested region could not be found.',
-    };
+    return (
+      <main className="min-h-screen bg-[#001B44] text-white p-8">
+        <h1 className="text-2xl font-bold mb-4">Region not found</h1>
+      </main>
+    );
   }
 
-  return {
-    title: `${region.name} Travel Guide - Explore ${region.base} and Surroundings`,
-    description: `Discover the best places to visit in ${region.name}, Japan. Explore ${region.base} and popular destinations like ${region.dayTrips.join(', ')}. Find local experiences and guided tours.`,
-    keywords: [
-      `${region.name} travel`,
-      `${region.base} tourism`,
-      'Japan travel guide',
-      'Japanese culture',
-      ...region.dayTrips.map((trip) => `${trip} travel`),
-    ],
-    openGraph: {
-      title: `${region.name} Travel Guide - Wanderlust Japan`,
-      description: `Explore ${region.name}, Japan - from ${region.base} to ${region.dayTrips.join(', ')}. Find authentic local experiences and guided tours.`,
-      images: [
-        {
-          url: region.thumbnail,
-          width: 1200,
-          height: 630,
-          alt: `${region.name} Region`,
-        },
-      ],
-    },
-  };
-}
-
-/**
- * The actual page component for /[lang]/regions/[region].
- */
-export default function RegionPage({
-  params,
-}: {
-  params: { lang: string; region: string };
-}) {
-  const region = REGIONS.find((r) => r.id === params.region);
-
-  if (!region) {
-    return <div>Region not found</div>;
+  // カテゴリIDに応じて異なるアイコンを返す
+  function getCategoryIcon(categoryId: string) {
+    switch (categoryId) {
+      case "nature-outdoor":
+        return <Mountain className="h-5 w-5 text-gray-900" />;
+      case "history-culture":
+        return <Landmark className="h-5 w-5 text-gray-900" />;
+      case "art-museum":
+        return <Brush className="h-5 w-5 text-gray-900" />;
+      case "food-drink":
+        return <Pizza className="h-5 w-5 text-gray-900" />;
+      case "theme-park":
+        return <FerrisWheel className="h-5 w-5 text-gray-900" />;
+      case "shopping-market":
+        return <ShoppingBag className="h-5 w-5 text-gray-900" />;
+      case "city-nightlife":
+        return <Building2 className="h-5 w-5 text-gray-900" />;
+      case "family-kids":
+        return <Baby className="h-5 w-5 text-gray-900" />;
+      case "relaxation-wellness":
+        // Lotus / Spa がない場合、Flower に置き換え
+        return <Flower className="h-5 w-5 text-gray-900" />;
+      case "sports-active":
+        return <Dumbbell className="h-5 w-5 text-gray-900" />;
+      case "transportation":
+        return <Bus className="h-5 w-5 text-gray-900" />;
+      case "souvenir":
+        return <Gift className="h-5 w-5 text-gray-900" />;
+      default:
+        // title= はTypeScriptエラーになるので aria-label= に変更
+        return <Landmark className="h-5 w-5 text-gray-900" aria-label="Default Icon" />;
+    }
   }
 
   return (
-    <>
-      <RegionContent region={region} />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'TouristDestination',
-            name: `${region.name}, Japan`,
-            description: region.description,
-            touristType: [
-              'Couples',
-              'Families',
-              'Adventure Travelers',
-              'Culture Enthusiasts',
-            ],
-            geo: {
-              '@type': 'GeoCircle',
-              geoMidpoint: {
-                '@type': 'GeoCoordinates',
-                latitude: 35.6762,
-                longitude: 139.6503,
-              },
-            },
-            includesAttraction: region.dayTrips.map((trip) => ({
-              '@type': 'TouristAttraction',
-              name: trip,
-            })),
-          }),
-        }}
-      />
-    </>
+    <main className="min-h-screen bg-[#001B44] text-white p-8">
+      <div className="mx-auto max-w-3xl">
+        <Link
+          href={`/${lang}/regions`}
+          className="mb-8 inline-flex items-center text-sm text-white/80 hover:text-white"
+        >
+          ← Back to Regions
+        </Link>
+
+        <h1 className="mb-2 text-center text-4xl font-bold">{region.name}</h1>
+        <p className="mb-8 text-center text-lg text-gray-300">
+          Choose a category below
+        </p>
+
+        <div className="grid gap-4">
+          {CATEGORIES.map((category) => {
+            const icon = getCategoryIcon(category.id);
+            return (
+              <Link
+                key={category.id}
+                href={`/${lang}/regions/${regionId}/${category.id}`}
+                className="block rounded-lg bg-white p-4 shadow-lg transition hover:shadow-xl text-gray-900"
+              >
+                <div className="flex items-center gap-3">
+                  {icon}
+                  <span className="text-lg font-semibold">{category.name}</span>
+                </div>
+              </Link>
+            );
+          })}
+        </div>
+      </div>
+    </main>
   );
 }
