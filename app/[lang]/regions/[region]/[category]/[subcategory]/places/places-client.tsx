@@ -27,7 +27,6 @@ export default function PlacesClient({
   };
 
   return (
-    // 1) メイン部分の上下余白を小さく
     <main className="min-h-screen bg-[#001B44] px-4 py-4 sm:py-8">
       <div className="mx-auto max-w-7xl">
         <Link
@@ -45,7 +44,6 @@ export default function PlacesClient({
           Choose a destination to explore activities
         </p>
 
-        {/* 2) グリッドgapは既に small (gap-2 sm:gap-3)。不要ならこのまま */}
         <div className="grid gap-2 sm:gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {places.map((place) => (
             <PlaceCard
@@ -84,24 +82,17 @@ function PlaceCard({
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <div
-      className="
-        group flex flex-col overflow-hidden 
-        rounded-lg bg-white 
-        shadow-lg transition hover:shadow-xl
-        // 3) min-h-[480px] を削除して可変に
-      "
-    >
+    <div className="group flex flex-col overflow-hidden rounded-lg bg-white shadow-lg transition hover:shadow-xl">
       <div className="relative h-40 sm:h-48">
         <img
           src={place.image}
           alt={place.name}
           className="h-full w-full object-cover transition duration-300 group-hover:scale-105"
         />
-        {/* 4) 黒オーバーレイを削除済み */}
+        {/* 黒オーバーレイ不要なら削除 */}
       </div>
 
-      {/* カード内余白をやや小さく (p-3 sm:p-4 -> p-2 sm:p-3) */}
+      {/* カード内部のパディングをやや小さく */}
       <div className="flex flex-1 flex-col p-2 sm:p-3">
         <div className="flex-1">
           <h2 className="mb-1 sm:mb-2 text-lg sm:text-xl font-semibold text-gray-900 line-clamp-2">
@@ -109,7 +100,6 @@ function PlaceCard({
           </h2>
 
           <div className="relative">
-            {/* 5) 部分的に表示 + Read more */}
             <p
               className={`text-xs sm:text-sm text-gray-600 ${
                 isExpanded ? "" : "line-clamp-3"
@@ -128,7 +118,6 @@ function PlaceCard({
           </div>
         </div>
 
-        {/* 6) ボタン行のマージンを小さく */}
         <div className="mt-2 sm:mt-3 flex gap-2 sm:gap-3">
           <button
             onClick={() => onMapClick(place.mapLink)}

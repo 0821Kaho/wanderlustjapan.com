@@ -7,17 +7,18 @@ export function generateStaticParams() {
   return REGIONS.flatMap((region) =>
     CATEGORIES.flatMap((category) =>
       (SUBCATEGORIES[category.id as keyof typeof SUBCATEGORIES] || []).flatMap(
-        (subcategory) => PLACES_DATA.filter(
-          (place) =>
-            place.region === region.id &&
-            place.category === category.id &&
-            place.subCategory === subcategory.id
-        ).map((place) => ({
-          region: region.id,
-          category: category.id,
-          subcategory: subcategory.id,
-          place: place.id,
-        }))
+        (subcategory) =>
+          PLACES_DATA.filter(
+            (place) =>
+              place.region === region.id &&
+              place.category === category.id &&
+              place.subCategory === subcategory.id
+          ).map((place) => ({
+            region: region.id,
+            category: category.id,
+            subcategory: subcategory.id,
+            place: place.id,
+          }))
       )
     )
   );
@@ -32,7 +33,7 @@ export default function PlacePage({
   const category = CATEGORIES.find((c) => c.id === params.category);
   const subcategories = SUBCATEGORIES[params.category as keyof typeof SUBCATEGORIES] || [];
   const subcategory = subcategories.find((s) => s.id === params.subcategory);
-  const place = PLACES_DATA.find(p => p.id === params.place);
+  const place = PLACES_DATA.find((p) => p.id === params.place);
 
   if (!region || !category || !subcategory || !place) {
     return <div>Not found</div>;
@@ -40,12 +41,15 @@ export default function PlacePage({
 
   const activities = ACTIVITIES_DATA[params.place] || [];
 
+  // Wrap ActivitiesClient in a <main> with top padding to prevent overlap
   return (
-    <ActivitiesClient
-      region={region}
-      category={category}
-      subcategory={subcategory}
-      activities={activities}
-    />
+    <main className="min-h-screen bg-[#001B44] pt-16 sm:pt-20 px-4 pb-8 sm:pb-16">
+      <ActivitiesClient
+        region={region}
+        category={category}
+        subcategory={subcategory}
+        activities={activities}
+      />
+    </main>
   );
 }

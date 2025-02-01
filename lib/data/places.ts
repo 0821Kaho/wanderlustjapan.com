@@ -1307,7 +1307,18 @@ export const PLACES_DATA: Place[] = [
     category: "shopping-market",
     subCategory: "shopping-street-walks"
   }, 
-  
+// Kanto Region - City Tourism & Nightlife - Helicopter Sightseeing
+{
+  id: "tokyo-helicopter-cruise",
+  name: "Tokyo Daytime Helicopter Cruising",
+  description: "Experience a thrilling helicopter tour over Tokyo, taking in views of Tokyo Tower, Rainbow Bridge, and Tokyo Station from approximately 400–600 meters above the ground. Perfect for special occasions like anniversaries, proposals, or simply enjoying a unique sightseeing adventure. Capture memorable photos in front of the helicopter inside the hangar.\n\n**Key Highlights**\n- **Helicopter Sightseeing**: Marvel at Tokyo’s iconic landmarks from the sky—Tokyo Tower, Rainbow Bridge, and Tokyo Station.\n- **Photo Opportunity**: Take commemorative photos in front of the helicopter in the hangar.\n- **Group-Friendly**: Each helicopter accommodates up to 3 passengers (children under 2 can sit on a guardian’s lap).\n- **Special Occasions**: Ideal for romantic dates, surprise proposals, or budget-friendly Tokyo sightseeing.\n\n**Schedule**\n- **30 Minutes Before Flight**: Check-in at Tokyo Heliport and receive a safety briefing.\n- **Helicopter Flight** (12 or 18 minutes): Enjoy panoramic views of Tokyo’s skyline.\n- **Photo Session**: Snap photos before or after your flight with the helicopter.\n\n**Duration**\n- 24-minute course / 30-minute course (including pre-flight briefing and photo time)\n\n**Meeting Point**\n- **Tokyo Heliport**\n  - Address: 4-7-28 Shinkiba, Koto-ku, Tokyo 136-0082\n  - Access: From **Shinkiba Station** (JR Keiyo Line, Tokyo Metro Yurakucho Line, Rinkai Line), it’s about a 5-minute ride by taxi or bus.\n\n**Includes**\n- Helicopter flight fee\n- Consumption tax\n\n**Additional Options** (extra charges apply)\n- Alphard or limousine transport\n- Flower bouquet arrangement\n- Video production\n- Taxi arrangement\n- Flight time extension\n- Flight course change\n- Free \"proposal strategy\" support\n\n**Important Notes**\n- Arrive 30 minutes before your reserved flight time.\n- Children under 2 years old sit on a guardian’s lap (not counted in the 3-person limit).\n- Flight cancellations may occur due to weather or operational issues.\n\nEnjoy a breathtaking, once-in-a-lifetime aerial tour of Tokyo with a daytime helicopter cruise—perfect for creating lasting memories and taking in the city’s stunning views!",
+  image: "/images/activities/tokyo-helicopter-cruise.jpg",
+  mapLink: "https://maps.app.goo.gl/7ABCAbW5QU7erDsGA",
+  region: "kanto",
+  category: "city-tourism-nightlife",
+  subCategory: "helicopter-sightseeing",
+  externalBookingUrl: "https://helloactivity.com/tokyo/ar-W08100130100/to-0542-0368872640/?a8=WQDdiQ7OU4t1QbPHDyMP4cPdwbYhv4PawyMQqJH4uafOUbDkM5tW94M3z5J_2_t9jaK4HwDejQDd6s00000023946001"
+},
 // Kanto Region - City Tourism & Nightlife - City Tours
 {
   id: "tokyo-helicopter-cruise",
@@ -1324,7 +1335,7 @@ export const PLACES_DATA: Place[] = [
     id: "ginza-city-walk",
     name: "Ginza",
     description: "Upscale shopping and dining district with hidden alleys, boutique stores.",
-    image: "/images/places/ginza.webp",
+    image: "/images/places/ginza-tokyo.jpg",
     mapLink: "https://maps.app.goo.gl/kJENLH4KvpRv82ws9",
     region: "kanto",
     category: "city-tourism-nightlife",
@@ -1334,7 +1345,7 @@ export const PLACES_DATA: Place[] = [
     id: "asakusa-city-walk",
     name: "Asakusa",
     description: "Historic temple area and backstreets, traditional atmosphere near Senso-ji.",
-    image: "/images/places/asakusa.jpg",
+    image: "/images/places/asakusa-nakamise.jpg",
     mapLink: "https://maps.app.goo.gl/bodXuhHgQbw6XSiF8",
     region: "kanto",
     category: "city-tourism-nightlife",
@@ -1344,7 +1355,7 @@ export const PLACES_DATA: Place[] = [
     id: "akihabara-city-walk",
     name: "Akihabara Electoric Town",
     description: "Electric Town for anime, manga, gaming shops, and quirky maid cafes.",
-    image: "/images/places/akihabara.webp",
+    image: "/images/places/akihabara-tokyo.webp",
     mapLink: "https://maps.app.goo.gl/TkTfap22nEGHLBu98",
     region: "kanto",
     category: "city-tourism-nightlife",
@@ -1354,7 +1365,7 @@ export const PLACES_DATA: Place[] = [
     id: "shibuya-city-walk",
     name: "Shibuya",
     description: "Famous crossing, youth fashion, neon lights, and late-night bustle.",
-    image: "/images/places/shibuya.webp",
+    image: "/images/places/shibuya-tokyo.webp",
     mapLink: "https://maps.app.goo.gl/mnJtsWwpuapW2teA6",
     region: "kanto",
     category: "city-tourism-nightlife",
@@ -1364,7 +1375,7 @@ export const PLACES_DATA: Place[] = [
     id: "nakameguro-city-walk",
     name: "Nakameguro",
     description: "Trendy cafes, boutiques along the Meguro River, cherry blossom hotspot.",
-    image: "/images/places/nakameguro.jpeg",
+    image: "/images/places/nakameguro-stylish-tokyo.jpg",
     mapLink: "https://maps.app.goo.gl/qcZsm9yKv3k33NZAA",
     region: "kanto",
     category: "city-tourism-nightlife",
@@ -1374,7 +1385,7 @@ export const PLACES_DATA: Place[] = [
     id: "marunouchi-city-walk",
     name: "Marunouchi Naka-Dori Avenue",
     description: "Central business district near Tokyo Station, upscale restaurants, chic streets.",
-    image: "/images/places/marunouchi-nakadori.jpg",
+    image: "/images/places/marunouchi-tokyo.jpg",
     mapLink: "https://maps.app.goo.gl/SZR3sUmhzRhNSXYf8",
     region: "kanto",
     category: "city-tourism-nightlife",
