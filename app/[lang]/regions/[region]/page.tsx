@@ -2,8 +2,6 @@
 
 import { useParams } from "next/navigation";
 import { REGIONS, CATEGORIES } from "@/lib/constants";
-import Link from "next/link";
-/* いろんなアイコンをインポート */
 import {
   Mountain,
   Landmark,
@@ -13,17 +11,19 @@ import {
   ShoppingBag,
   Building2,
   Baby,
-  Flower,   // ← SpaやLotusがない場合、Flowerなど別のアイコンを代用
+  Flower,
   Dumbbell,
   Bus,
   Gift,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function RegionDetailPage() {
   const params = useParams();
   const lang = params.lang as string;
   const regionId = params.region as string;
 
+  // Find the matching region
   const region = REGIONS.find((r) => r.id === regionId);
   if (!region) {
     return (
@@ -33,55 +33,57 @@ export default function RegionDetailPage() {
     );
   }
 
-  // カテゴリIDに応じて異なるアイコンを返す
+  // Use brand color (blue) for icons
   function getCategoryIcon(categoryId: string) {
+    const baseClasses = "h-5 w-5 text-blue-600 transition";
     switch (categoryId) {
       case "nature-outdoor":
-        return <Mountain className="h-5 w-5 text-gray-900" />;
+        return <Mountain className={baseClasses} />;
       case "history-culture":
-        return <Landmark className="h-5 w-5 text-gray-900" />;
+        return <Landmark className={baseClasses} />;
       case "art-museum":
-        return <Brush className="h-5 w-5 text-gray-900" />;
+        return <Brush className={baseClasses} />;
       case "food-drink":
-        return <Pizza className="h-5 w-5 text-gray-900" />;
+        return <Pizza className={baseClasses} />;
       case "theme-park":
-        return <FerrisWheel className="h-5 w-5 text-gray-900" />;
+        return <FerrisWheel className={baseClasses} />;
       case "shopping-market":
-        return <ShoppingBag className="h-5 w-5 text-gray-900" />;
+        return <ShoppingBag className={baseClasses} />;
       case "city-nightlife":
-        return <Building2 className="h-5 w-5 text-gray-900" />;
+        return <Building2 className={baseClasses} />;
       case "family-kids":
-        return <Baby className="h-5 w-5 text-gray-900" />;
+        return <Baby className={baseClasses} />;
       case "relaxation-wellness":
-        // Lotus / Spa がない場合、Flower に置き換え
-        return <Flower className="h-5 w-5 text-gray-900" />;
+        return <Flower className={baseClasses} />;
       case "sports-active":
-        return <Dumbbell className="h-5 w-5 text-gray-900" />;
+        return <Dumbbell className={baseClasses} />;
       case "transportation":
-        return <Bus className="h-5 w-5 text-gray-900" />;
+        return <Bus className={baseClasses} />;
       case "souvenir":
-        return <Gift className="h-5 w-5 text-gray-900" />;
+        return <Gift className={baseClasses} />;
       default:
-        // title= はTypeScriptエラーになるので aria-label= に変更
-        return <Landmark className="h-5 w-5 text-gray-900" aria-label="Default Icon" />;
+        return <Landmark className={baseClasses} aria-label="Default Icon" />;
     }
   }
 
   return (
-    <main className="min-h-screen bg-[#001B44] text-white p-8">
-      <div className="mx-auto max-w-3xl">
+    <main className="min-h-screen bg-[#001B44] pt-20 sm:pt-24 pb-8 sm:pb-12 text-white">
+      <div className="mx-auto max-w-3xl px-6 sm:px-8">
         <Link
           href={`/${lang}/regions`}
-          className="mb-8 inline-flex items-center text-sm text-white/80 hover:text-white"
+          className="mb-6 inline-flex items-center text-sm text-white/80 hover:text-white"
         >
-          ← Back to Regions
+          ← Back
         </Link>
 
-        <h1 className="mb-2 text-center text-4xl font-bold">{region.name}</h1>
-        <p className="mb-8 text-center text-lg text-gray-300">
+        <h1 className="mb-2 text-center text-3xl sm:text-4xl font-bold">
+          {region.name}
+        </h1>
+        <p className="mb-6 text-center text-base sm:text-lg text-gray-300">
           Choose a category below
         </p>
 
+        {/* Map over your CATEGORIES for this region */}
         <div className="grid gap-4">
           {CATEGORIES.map((category) => {
             const icon = getCategoryIcon(category.id);

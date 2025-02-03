@@ -71,24 +71,15 @@ export const ACTIVITIES_DATA: Record<string, Activity[]> = {
 ],
   "sensoji-asakusa": [
     {
-      id: "sensoji-guided-tour",
-      name: "Sensoji Temple Tour",
-      description: "Guided tour of Tokyo's oldest Buddhist temple with historical insights.",
-      image: "https://images.unsplash.com/photo-1583067595935-4606dc298729?w=800&auto=format&fit=crop",
-      price: { amount: 4000, currency: "JPY" },
-      duration: "2 hours",
-      bookingUrl: "https://example.com/book",
-      helpUrl: "https://wa.me/1234567890"
-    },
-    {
-      id: "asakusa-food-tour",
-      name: "Asakusa Food Tour",
-      description: "Sample traditional Japanese snacks along Nakamise Shopping Street.",
-      image: "https://images.unsplash.com/photo-1535189043414-47a3c49a0bed?w=800&auto=format&fit=crop",
-      price: { amount: 8000, currency: "JPY" },
-      duration: "3 hours",
-      bookingUrl: "https://example.com/book",
-      helpUrl: "https://wa.me/1234567890"
+      "id": "asakusa-food-tour",
+      "name": "Asakusa Culture and Food Tour",
+      "description": "Explore Asakusa's must-see sights including Sensoji Temple, Kaminarimon, and Nakamise Shopping Street while sampling traditional Japanese dishes like sushi, tempura, and local chicken cuisine, plus a soft drink and dessert. (4 hours)",
+      "image": "/images/places/asakusa-food-tour.jpg",
+      "price": { "amount": 180, "currency": "USD" },
+      "duration": "4 hours",
+      "bookingUrl": "https://helloactivity.com/tokyo/ar-W08100130400/to-0591-0486816255/?a8=gXUI7X-RfpiCXoFwU9lFpWFIAobcNpFMA9lX8.wpLM1RfoUSlziR8oiykobt4tiGBMOpwAU5BXUIns00000023946001",
+      "helpUrl": "https://wa.me/1234567890"
     }
+    
   ]
 };

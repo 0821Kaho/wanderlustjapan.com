@@ -1,7 +1,7 @@
-import { REGIONS, CATEGORIES, SUBCATEGORIES } from '@/lib/constants';
-import { PLACES_DATA } from '@/lib/data/places';
-import PlacesClient from './places-client';
-import type { Metadata } from 'next';
+import { REGIONS, CATEGORIES, SUBCATEGORIES } from "@/lib/constants";
+import { PLACES_DATA } from "@/lib/data/places";
+import PlacesClient from "./places-client";
+import type { Metadata } from "next";
 
 export function generateStaticParams() {
   return REGIONS.flatMap((region) =>
@@ -17,16 +17,21 @@ export function generateStaticParams() {
   );
 }
 
-export function generateMetadata({ params }: { params: { region: string; category: string; subcategory: string } }): Metadata {
+export function generateMetadata({
+  params,
+}: {
+  params: { region: string; category: string; subcategory: string };
+}): Metadata {
   const region = REGIONS.find((r) => r.id === params.region);
   const category = CATEGORIES.find((c) => c.id === params.category);
-  const subcategories = SUBCATEGORIES[params.category as keyof typeof SUBCATEGORIES] || [];
+  const subcategories =
+    SUBCATEGORIES[category?.id as keyof typeof SUBCATEGORIES] || [];
   const subcategory = subcategories.find((s) => s.id === params.subcategory);
 
   if (!region || !category || !subcategory) {
     return {
-      title: 'Not Found',
-      description: 'The requested page could not be found.',
+      title: "Not Found",
+      description: "The requested page could not be found.",
     };
   }
 
@@ -43,12 +48,17 @@ export function generateMetadata({ params }: { params: { region: string; categor
     openGraph: {
       title: `${subcategory.name} in ${region.name} - Wanderlust Japan`,
       description: `Explore ${places.length} ${subcategory.name.toLowerCase()} destinations in ${region.name}, Japan. Find hidden gems and popular spots.`,
-      images: places.length > 0 ? [{
-        url: places[0].image,
-        width: 1200,
-        height: 630,
-        alt: `${subcategory.name} in ${region.name}`
-      }] : undefined,
+      images:
+        places.length > 0
+          ? [
+              {
+                url: places[0].image,
+                width: 1200,
+                height: 630,
+                alt: `${subcategory.name} in ${region.name}`,
+              },
+            ]
+          : undefined,
     },
   };
 }
@@ -60,7 +70,8 @@ export default function PlacesPage({
 }) {
   const region = REGIONS.find((r) => r.id === params.region);
   const category = CATEGORIES.find((c) => c.id === params.category);
-  const subcategories = SUBCATEGORIES[params.category as keyof typeof SUBCATEGORIES] || [];
+  const subcategories =
+    SUBCATEGORIES[category?.id as keyof typeof SUBCATEGORIES] || [];
   const subcategory = subcategories.find((s) => s.id === params.subcategory);
 
   if (!region || !category || !subcategory) {
@@ -74,12 +85,24 @@ export default function PlacesPage({
       place.subCategory === params.subcategory
   );
 
+  // Reduced top padding & heading size
   return (
-    <PlacesClient
-      region={region}
-      category={category}
-      subcategory={subcategory}
-      places={filteredPlaces}
-    />
+    <main className="min-h-screen bg-[#001B44] pt-14 sm:pt-16">
+      <div className="mx-auto max-w-6xl px-6 sm:px-8 pb-8 sm:pb-12">
+        <h1 className="mb-2 sm:mb-3 text-center text-xl sm:text-2xl font-bold text-white">
+          {subcategory.name} in {region.name}
+        </h1>
+        <p className="mb-6 sm:mb-8 text-center text-sm sm:text-base text-gray-300">
+          Choose a destination to explore activities
+        </p>
+
+        <PlacesClient
+          region={region}
+          category={category}
+          subcategory={subcategory}
+          places={filteredPlaces}
+        />
+      </div>
+    </main>
   );
 }

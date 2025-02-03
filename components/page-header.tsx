@@ -1,30 +1,18 @@
-'use client';
+"use client";
 
-import React from 'react';
-import { HelpCircle } from 'lucide-react';
-import LanguageSwitcher from './language-switcher';
+import React from "react";
+import { HelpCircle } from "lucide-react";
+import LanguageSwitcher from "./language-switcher";
 
-interface PageHeaderProps {
-  title: string;
-}
-
-export default function PageHeader({ title }: PageHeaderProps) {
+export default function PageHeader() {
   return (
-    <header
-      className="
-        fixed
-        top-0 left-0 right-0
-        z-50
-        bg-[#001B44]
-        h-16
-      "
-    >
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[#001B44] h-20">
       <div className="max-w-7xl mx-auto h-full px-4 flex justify-end items-center">
         <div className="flex items-center gap-4">
           {/* Language Switcher */}
           <LanguageSwitcher />
 
-          {/* Help Button with semi-transparent background & border */}
+          {/* Help Button */}
           <button
             className="
               flex items-center gap-2
@@ -47,11 +35,7 @@ export default function PageHeader({ title }: PageHeaderProps) {
           </button>
         </div>
       </div>
-
-      {/* Display the title at the bottom-left corner of the header */}
-      <div className="absolute bottom-0 left-4 mb-2 text-white">
-        {title}
-      </div>
+      {/* Title removed; now we place the main heading inside the <main> */}
     </header>
   );
 }

@@ -27,38 +27,30 @@ export default function PlacesClient({
   };
 
   return (
-    <main className="min-h-screen bg-[#001B44] px-4 py-4 sm:py-8">
-      <div className="mx-auto max-w-7xl">
-        <Link
-          href={`/regions/${region.id}/${category.id}`}
-          className="mb-4 sm:mb-6 inline-flex items-center gap-2 text-sm text-white/80 hover:text-white"
-        >
-          <ArrowLeft className="h-4 w-4" />
-          Back
-        </Link>
+    <div>
+      {/* “Back” link to region/category page */}
+      <Link
+        href={`/regions/${region.id}/${category.id}`}
+        className="mb-4 inline-flex items-center gap-2 text-sm text-white/80 hover:text-white"
+      >
+        <ArrowLeft className="h-4 w-4" />
+        Back
+      </Link>
 
-        <h1 className="mb-2 sm:mb-3 text-center text-3xl sm:text-4xl font-bold text-white">
-          {subcategory.name} in {region.name}
-        </h1>
-        <p className="mb-6 sm:mb-8 text-center text-base sm:text-lg text-gray-300">
-          Choose a destination to explore activities
-        </p>
-
-        <div className="grid gap-2 sm:gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {places.map((place) => (
-            <PlaceCard
-              key={place.id}
-              place={place}
-              region={region}
-              category={category}
-              subcategory={subcategory}
-              onMapClick={openGoogleMaps}
-              onExternalBookingClick={openExternalBooking}
-            />
-          ))}
-        </div>
+      <div className="grid gap-6 sm:gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        {places.map((place) => (
+          <PlaceCard
+            key={place.id}
+            place={place}
+            region={region}
+            category={category}
+            subcategory={subcategory}
+            onMapClick={openGoogleMaps}
+            onExternalBookingClick={openExternalBooking}
+          />
+        ))}
       </div>
-    </main>
+    </div>
   );
 }
 
@@ -89,13 +81,11 @@ function PlaceCard({
           alt={place.name}
           className="h-full w-full object-cover transition duration-300 group-hover:scale-105"
         />
-        {/* 黒オーバーレイ不要なら削除 */}
       </div>
 
-      {/* カード内部のパディングをやや小さく */}
-      <div className="flex flex-1 flex-col p-2 sm:p-3">
+      <div className="flex flex-1 flex-col p-3 sm:p-4 text-gray-900">
         <div className="flex-1">
-          <h2 className="mb-1 sm:mb-2 text-lg sm:text-xl font-semibold text-gray-900 line-clamp-2">
+          <h2 className="mb-1 sm:mb-2 text-base sm:text-lg font-semibold line-clamp-2">
             {place.name}
           </h2>
 
@@ -121,10 +111,11 @@ function PlaceCard({
         <div className="mt-2 sm:mt-3 flex gap-2 sm:gap-3">
           <button
             onClick={() => onMapClick(place.mapLink)}
-            className="flex flex-1 items-center justify-center gap-1.5 sm:gap-2 
-                       rounded-full bg-blue-600 
-                       px-3 sm:px-4 py-2 sm:py-2.5 
-                       text-sm font-medium text-white transition hover:bg-blue-700"
+            className="flex flex-1 items-center justify-center gap-1.5 sm:gap-2
+                       rounded-full bg-blue-600
+                       px-3 sm:px-4 py-2 sm:py-2.5
+                       text-sm font-medium text-white
+                       transition hover:bg-blue-700"
           >
             <MapPin className="h-4 w-4" />
             View Map
@@ -133,10 +124,11 @@ function PlaceCard({
           {place.externalBookingUrl ? (
             <button
               onClick={() => onExternalBookingClick(place.externalBookingUrl!)}
-              className="flex flex-1 items-center justify-center gap-1.5 sm:gap-2 
-                         rounded-full bg-green-600 
-                         px-3 sm:px-4 py-2 sm:py-2.5 
-                         text-sm font-medium text-white transition hover:bg-green-700"
+              className="flex flex-1 items-center justify-center gap-1.5 sm:gap-2
+                         rounded-full bg-green-600
+                         px-3 sm:px-4 py-2 sm:py-2.5
+                         text-sm font-medium text-white
+                         transition hover:bg-green-700"
             >
               <ExternalLink className="h-4 w-4" />
               Book Now
@@ -144,10 +136,12 @@ function PlaceCard({
           ) : (
             <Link
               href={`/regions/${region.id}/${category.id}/${subcategory.id}/places/${place.id}/activities`}
-              className="flex flex-1 items-center justify-center gap-1.5 sm:gap-2 
-                         rounded-full bg-green-600 
-                         px-3 sm:px-4 py-2 sm:py-2.5 
-                         text-sm font-medium text-white transition hover:bg-green-700"
+              className="flex flex-1 items-center justify-center gap-1.5 sm:gap-2
+                         rounded-full bg-green-600
+                         px-3 sm:px-4 py-2 sm:py-2.5
+                         text-sm font-medium text-white
+                         transition hover:bg-green-700
+                         text-center"
             >
               View Activities
             </Link>
@@ -157,3 +151,4 @@ function PlaceCard({
     </div>
   );
 }
+

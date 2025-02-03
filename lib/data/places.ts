@@ -706,8 +706,8 @@ export const PLACES_DATA: Place[] = [
 
   // Kanto Region - Art & Museum - art-exhibitions
   {
-    id: "mori-art-exhibition",
-    name: "Mori Special Exhibition",
+    id: "mori-art-museum",
+    name: "Mori Art Museum",
     description: "Rotating modern exhibits at Mori Art Museum, often featuring cutting-edge themes.",
     image: "/images/places/mori-art.jpg",
     mapLink: "https://maps.app.goo.gl/oN9aJC5pGmxyrzzf7",
@@ -733,7 +733,7 @@ export const PLACES_DATA: Place[] = [
     mapLink: "https://maps.app.goo.gl/sKjqjxwHWamodvWn6",
     region: "kanto",
     category: "art-museum",
-    subCategory: "art-exhibitions"
+    subCategory: "art-museum"
   },
   {
     id: "tokyo-photographic-art-museum",
@@ -743,7 +743,7 @@ export const PLACES_DATA: Place[] = [
     mapLink: "https://maps.app.goo.gl/prPscfXzyZFYcDN36",
     region: "kanto",
     category: "art-museum",
-    subCategory: "art-exhibitions"
+    subCategory: "art-museum"
   },
   {
     id: "pola-museum-annex-ginza",
@@ -753,7 +753,7 @@ export const PLACES_DATA: Place[] = [
     mapLink: "https://maps.app.goo.gl/AEPEHMXM1VAWHT9G6",
     region: "kanto",
     category: "art-museum",
-    subCategory: "art-exhibitions"
+    subCategory: "art-museum"
   },
   {
     id: "yokohama-museum-art",
@@ -763,7 +763,7 @@ export const PLACES_DATA: Place[] = [
     mapLink: "https://maps.app.goo.gl/sUJLFetCU4PYnXJCA",
     region: "kanto",
     category: "art-museum",
-    subCategory: "art-exhibitions"
+    subCategory: "art-museum"
   },
 
 // Kanto Region - Art & Museum - Design Shows
@@ -1110,26 +1110,56 @@ export const PLACES_DATA: Place[] = [
   },
 
 // Kanto Region - Theme Park & Attraction - VR Attractions
-  {
-    id: "Tyffonium Odaiba",
-    name: "Odaiba Virtual Park",
-    description: "Interactive rides exploring space, giant robots, future cityscapes in Tokyo Bay.",
-    image: "/images/places/odaiba-virtual-park",
-    mapLink: "https://maps.app.goo.gl/aYixB8Yg4svs52cj8",
-    region: "kanto",
-    category: "theme-park-attraction",
-    subCategory: "vr-attractions"
-  },
-  {
-    id: "joypolis-odaiba",
-    name: "Joypolis (Odaiba)",
-    description: "SEGA indoor amusement with VR-like simulators, arcade games, digital rides.",
-    image: "/images/places/joypolis-odaiba",
-    mapLink: "https://maps.app.goo.gl/6tkNP6RJhC88VGwT8",
-    region: "kanto",
-    category: "theme-park-attraction",
-    subCategory: "vr-attractions"
-  },
+{
+  id: "hado-arena-odaiba",
+  name: "HADO Arena Odaiba",
+  description: "AR sports battle where you shoot energy blasts and dodge incoming attacks, 1-hour free pass plan.",
+  image: "/images/places/hado-arena-odaiba-vr-tokyo.webp",
+  mapLink: "https://maps.app.goo.gl/7whZgu4wQdASvuvQ7",
+  region: "kanto",
+  category: "theme-park-attraction",
+  subCategory: "vr-attractions",
+},
+{
+  id: "tokyo-tower-vr-bungee",
+  name: "Tokyo Tower VR Bungee",
+  description: "Leap off Tokyo Tower in a virtual bungee jump experience, short but adrenaline-packed.",
+  image: "/images/places/tokyo-tower-vr-bungee.jpg",
+  mapLink: "https://maps.app.goo.gl/7zM6aPpD997iRAgs8",
+  region: "kanto",
+  category: "theme-park-attraction",
+  subCategory: "vr-attractions",
+},
+{
+  id: "akiba-vr-mystery-escape",
+  name: "Reality.Edge.VR VR Escape Room Akihabara",
+  description: "Solve puzzles and break out of virtual rooms in this one-hour escape adventure.",
+  image: "/images/places/akiba-vr-escape.avif",
+  mapLink: "https://maps.app.goo.gl/Wy1T2BHBKvL8CbHRA",
+  region: "kanto",
+  category: "theme-park-attraction",
+  subCategory: "vr-attractions",
+},
+{
+  id: "space-travelium-tenq",
+  name: "Space Travelium TeNQ",
+  description: "Immersive space-themed attraction near Tokyo Dome, combining VR exhibits and cosmic galleries.",
+  image: "/images/places/space-travelium-tenq-tokyodome.jpeg",
+  mapLink: "https://maps.app.goo.gl/6vSM32R8icavacWX7",
+  region: "kanto",
+  category: "theme-park-attraction",
+  subCategory: "vr-attractions",
+},
+{
+  id: "joypolis-odaiba",
+  name: "Joypolis (Odaiba)",
+  description: "SEGA indoor amusement center with VR-like simulators, arcade games, and digital rides.",
+  image: "/images/places/joypolis-odaiba-vr-tokyo.jpg",
+  mapLink: "https://maps.app.goo.gl/D19mP3MGFknKbC3w5",
+  region: "kanto",
+  category: "theme-park-attraction",
+  subCategory: "vr-attractions",
+},
 
 // 6) Kanto Region - Theme Park & Attraction - Sightseeing Trains
   {
@@ -1589,6 +1619,29 @@ export const PLACES_DATA: Place[] = [
   subCategory: "local-food-tours",
   externalBookingUrl: "https://helloactivity.com/tokyo/ar-W08100130200/to-0591-0070835328/?a8=UnOGgnV4RyW5naXYO0jXyDXGbaNTLyXSb0jnEwYyPSe4RaO_jIW-jyjPvywcmcWqiS2yYbOdinOGZs00000023946001"
 },
+{
+  "id": "asakusa-food-tour",
+  "name": "Asakusa Culture and Food Tour",
+  "description": "Asakusa is one of Tokyo's unmissable areas, steeped in history and flavor. Experience the cultural heart of the city with a tour that includes:\n\n**Key Highlights**\n- **Historical Sights**: Visit Sensoji Temple, Kaminarimon, and the bustling Nakamise Shopping Street.\n- **Cultural Immersion**: Learn authentic Japanese eating styles and discover hidden local food spots off the usual tourist path.\n\n**Itinerary**\n- Asakusa Cultural Information Centre (1F)\n- Kaminarimon\n- Nakamise Shopping Street\n- Sensoji Temple\n- Rokku District\n- Sumida River Bank\n\n**Duration**: 4 hours\n\n**Includes**\n- Access to Sensoji Temple, Kaminarimon, and Rokku District areas\n- A culinary experience featuring sushi, tempura, and Japanese-style chicken cuisine\n- 1 soft drink and dessert\n\n**What to Bring**: Nothing\n\n**Note**: Alcohol is not included in the price.",
+  "image": "/images/places/asakusa-food-tour.jpg",
+  "mapLink": "",
+  "region": "kanto",
+  "category": "food-drink",
+  "subCategory": "local-food-tours",
+  "externalBookingUrl": "https://helloactivity.com/tokyo/ar-W08100130400/to-0591-0486816255/?a8=gXUI7X-RfpiCXoFwU9lFpWFIAobcNpFMA9lX8.wpLM1RfoUSlziR8oiykobt4tiGBMOpwAU5BXUIns00000023946001"
+}, 
+{
+  "id": "ueno-local-market-food-tour",
+  "name": "Ueno Local Market Food Tour",
+  "description": "Experience the dynamic heart of Ueno with a tour that immerses you in the local market vibe and cultural landmarks. \n\n**Highlights:**\n- Explore the lively areas around JR Ueno Station and Ueno Park, including the bustling Ameya Yokocho shopping street.\n- Savor fresh sushi, yakiniku, and tempura along with a complimentary soft drink and dessert.\n\n**Itinerary:**\n- Saigo Statue\n- Gojoten Shrine\n- Ueno Toshogu\n- Shinobazu Pond and Bentendo\n- Ameya Yokocho Shopping Area\n- Tokudaiji Marishiten Temple\n- Walk from Ueno to Okachimachi\n\n**Duration:** 4 hours\n\n**Includes:** Sushi, Yakiniku, Tempura, 1 soft drink, and dessert.\n**Note:** Alcohol is not included. No additional items required.",
+  "image": "/images/places/ueno-local-market-food-tour-tokyo.jpg",
+  "mapLink": "https://maps.app.goo.gl/cqJLdz8auL9pfSaK9",
+  "region": "kanto",
+  "category": "food-drink",
+  "subCategory": "local-food-tours",
+  "externalBookingUrl": "https://helloactivity.com/tokyo/ar-W08100130400/to-0591-1493995804/?a8=gXUI7X-RfpiCXoFwU9lFpWFIAobcNpFMA9lX8.wpLM1RfoUSlziR8oiykobt4tiGBMOpwAU5BXUIns00000023946001"
+},
+
 
 // Kanto Region - Family & Kids - Parent-Child Workshops
   {
@@ -1605,7 +1658,7 @@ export const PLACES_DATA: Place[] = [
     id: "paper-craft-studio-kita",
     name: "Paper Craft Studio (Kita)",
     description: "Fold washi paper creations together, learn traditional designs.",
-    image: "/images/places/paper-museum.jpg",
+    image: "/images/places/paper-museum-tokyo.jpg",
     mapLink: "https://maps.app.goo.gl/fHRjxwX5BV6n4C7V6",
     region: "kanto",
     category: "family-kids",
@@ -1652,7 +1705,8 @@ export const PLACES_DATA: Place[] = [
     mapLink: "https://maps.app.goo.gl/j7sutB37mMd5PgZ58",
     region: "kanto",
     category: "family-kids",
-    subCategory: "kid-focused-learning"
+    subCategory: "kid-focused-learning",
+    externalBookingUrl: "https://www.asoview.com/base/160196/"
   },
   {
     id: "coding-lab",
@@ -1662,7 +1716,8 @@ export const PLACES_DATA: Place[] = [
     mapLink: "https://maps.app.goo.gl/2efJnVgq7QNxr7hq8",
     region: "kanto",
     category: "family-kids",
-    subCategory: "kid-focused-learning"
+    subCategory: "kid-focused-learning",
+    externalBookingUrl: "https://codinglab.jp/"
   },
   {
     id: "sumida-aquarium-stem",
