@@ -1620,26 +1620,26 @@ export const PLACES_DATA: Place[] = [
   externalBookingUrl: "https://helloactivity.com/tokyo/ar-W08100130200/to-0591-0070835328/?a8=UnOGgnV4RyW5naXYO0jXyDXGbaNTLyXSb0jnEwYyPSe4RaO_jIW-jyjPvywcmcWqiS2yYbOdinOGZs00000023946001"
 },
 {
-  "id": "asakusa-food-tour",
-  "name": "Asakusa Culture and Food Tour",
-  "description": "Asakusa is one of Tokyo's unmissable areas, steeped in history and flavor. Experience the cultural heart of the city with a tour that includes:\n\n**Key Highlights**\n- **Historical Sights**: Visit Sensoji Temple, Kaminarimon, and the bustling Nakamise Shopping Street.\n- **Cultural Immersion**: Learn authentic Japanese eating styles and discover hidden local food spots off the usual tourist path.\n\n**Itinerary**\n- Asakusa Cultural Information Centre (1F)\n- Kaminarimon\n- Nakamise Shopping Street\n- Sensoji Temple\n- Rokku District\n- Sumida River Bank\n\n**Duration**: 4 hours\n\n**Includes**\n- Access to Sensoji Temple, Kaminarimon, and Rokku District areas\n- A culinary experience featuring sushi, tempura, and Japanese-style chicken cuisine\n- 1 soft drink and dessert\n\n**What to Bring**: Nothing\n\n**Note**: Alcohol is not included in the price.",
-  "image": "/images/places/asakusa-food-tour.jpg",
-  "mapLink": "",
-  "region": "kanto",
-  "category": "food-drink",
-  "subCategory": "local-food-tours",
-  "externalBookingUrl": "https://helloactivity.com/tokyo/ar-W08100130400/to-0591-0486816255/?a8=gXUI7X-RfpiCXoFwU9lFpWFIAobcNpFMA9lX8.wpLM1RfoUSlziR8oiykobt4tiGBMOpwAU5BXUIns00000023946001"
+  id: "asakusa-food-tour",
+  name: "Asakusa Culture and Food Tour",
+  description: "Asakusa is one of Tokyo's unmissable areas, steeped in history and flavor. Experience the cultural heart of the city with a tour that includes:\n\n**Key Highlights**\n- **Historical Sights**: Visit Sensoji Temple, Kaminarimon, and the bustling Nakamise Shopping Street.\n- **Cultural Immersion**: Learn authentic Japanese eating styles and discover hidden local food spots off the usual tourist path.\n\n**Itinerary**\n- Asakusa Cultural Information Centre (1F)\n- Kaminarimon\n- Nakamise Shopping Street\n- Sensoji Temple\n- Rokku District\n- Sumida River Bank\n\n**Duration**: 4 hours\n\n**Includes**\n- Access to Sensoji Temple, Kaminarimon, and Rokku District areas\n- A culinary experience featuring sushi, tempura, and Japanese-style chicken cuisine\n- 1 soft drink and dessert\n\n**What to Bring**: Nothing\n\n**Note**: Alcohol is not included in the price.",
+  image: "/images/places/asakusa-food-tour.jpg",
+  mapLink: "",
+  region: "kanto",
+  category: "food-drink",
+  subCategory: "local-food-tours",
+  externalBookingUrl: "https://helloactivity.com/tokyo/ar-W08100130400/to-0591-0486816255/?a8=gXUI7X-RfpiCXoFwU9lFpWFIAobcNpFMA9lX8.wpLM1RfoUSlziR8oiykobt4tiGBMOpwAU5BXUIns00000023946001"
 }, 
 {
-  "id": "ueno-local-market-food-tour",
-  "name": "Ueno Local Market Food Tour",
-  "description": "Experience the dynamic heart of Ueno with a tour that immerses you in the local market vibe and cultural landmarks. \n\n**Highlights:**\n- Explore the lively areas around JR Ueno Station and Ueno Park, including the bustling Ameya Yokocho shopping street.\n- Savor fresh sushi, yakiniku, and tempura along with a complimentary soft drink and dessert.\n\n**Itinerary:**\n- Saigo Statue\n- Gojoten Shrine\n- Ueno Toshogu\n- Shinobazu Pond and Bentendo\n- Ameya Yokocho Shopping Area\n- Tokudaiji Marishiten Temple\n- Walk from Ueno to Okachimachi\n\n**Duration:** 4 hours\n\n**Includes:** Sushi, Yakiniku, Tempura, 1 soft drink, and dessert.\n**Note:** Alcohol is not included. No additional items required.",
-  "image": "/images/places/ueno-local-market-food-tour-tokyo.jpg",
-  "mapLink": "https://maps.app.goo.gl/cqJLdz8auL9pfSaK9",
-  "region": "kanto",
-  "category": "food-drink",
-  "subCategory": "local-food-tours",
-  "externalBookingUrl": "https://helloactivity.com/tokyo/ar-W08100130400/to-0591-1493995804/?a8=gXUI7X-RfpiCXoFwU9lFpWFIAobcNpFMA9lX8.wpLM1RfoUSlziR8oiykobt4tiGBMOpwAU5BXUIns00000023946001"
+  id: "ueno-local-market-food-tour",
+  name: "Ueno Local Market Food Tour",
+  description: "Experience the dynamic heart of Ueno with a tour that immerses you in the local market vibe and cultural landmarks. \n\n**Highlights:**\n- Explore the lively areas around JR Ueno Station and Ueno Park, including the bustling Ameya Yokocho shopping street.\n- Savor fresh sushi, yakiniku, and tempura along with a complimentary soft drink and dessert.\n\n**Itinerary:**\n- Saigo Statue\n- Gojoten Shrine\n- Ueno Toshogu\n- Shinobazu Pond and Bentendo\n- Ameya Yokocho Shopping Area\n- Tokudaiji Marishiten Temple\n- Walk from Ueno to Okachimachi\n\n**Duration:** 4 hours\n\n**Includes:** Sushi, Yakiniku, Tempura, 1 soft drink, and dessert.\n**Note:** Alcohol is not included. No additional items required.",
+  image: "/images/places/ueno-local-market-food-tour-tokyo.jpg",
+  mapLink: "https://maps.app.goo.gl/cqJLdz8auL9pfSaK9",
+  region: "kanto",
+  category: "food-drink",
+  subCategory: "local-food-tours",
+  externalBookingUrl: "https://helloactivity.com/tokyo/ar-W08100130400/to-0591-1493995804/?a8=gXUI7X-RfpiCXoFwU9lFpWFIAobcNpFMA9lX8.wpLM1RfoUSlziR8oiykobt4tiGBMOpwAU5BXUIns00000023946001"
 },
 
 
@@ -1814,6 +1814,201 @@ export const PLACES_DATA: Place[] = [
   category: "relaxation-wellness",
   subCategory: "spas",
   externalBookingUrl: "https://helloactivity.com/tokyo/ar-W08100130200/to-0592-0383938517/?a8=UnOGgnV4RyW5naXYO0jXyDXGbaNTLyXSb0jnEwYyPSe4RaO_jIW-jyjPvywcmcWqiS2yYbOdinOGZs00000023946001"
+},
+
+{
+  id: "thermae-yu-shinjuku",
+  name: "Thermae-yu (Shinjuku)",
+  description: "Modern onsen/spa in the heart of Shinjuku featuring natural hot spring baths, multiple saunas, and relaxation lounges.",
+  image: "/images/places/thermae-yu-shinjuku-spa-onsen-tokyo.png",
+  mapLink: "https://maps.app.goo.gl/r8TVW4vn342yXhSWA",
+  region: "kanto",
+  category: "relaxation-wellness",
+  subCategory: "spas"
+},
+{
+  id: "toshimaen-niwa-no-yu",
+  name: "Toshimaen Niwa no Yu (Nerima)",
+  description: "Garden-style spa complex with open-air baths, carbonated baths, and a lush Japanese garden setting, located near Toshimaen amusement park.",
+  image: "/images/places/toshimaen-niwa-no-yu-spa-tokyo-onsen.jpg",
+  mapLink: "https://maps.app.goo.gl/qLGuQmtohEb2mdhR7",
+  region: "kanto",
+  category: "relaxation-wellness",
+  subCategory: "spas"
+},
+{
+  id: "saya-no-yu-itabashi",
+  name: "Saya no Yu (Itabashi)",
+  description: "A day-use onsen with a charming Japanese garden, natural hot spring water, stone saunas, and spacious indoor/outdoor baths.",
+  image: "/images/places/saya-no-yu-itabashi-onsen-tokyo.jpeg",
+  mapLink: "https://maps.app.goo.gl/v4iZTtnqbQtXJvQP6",
+  region: "kanto",
+  category: "relaxation-wellness",
+  subCategory: "spas"
+},
+{
+  id: "spa-laqua-bunkyo",
+  name: "Spa LaQua (Tokyo Dome City)",
+  description: "Natural hot spring spa featuring multiple indoor and outdoor pools, sauna zones, massage services, all in a convenient urban location.",
+  image: "/images/places/spa-laqua-tokyo.jpg",
+  mapLink: "https://maps.app.goo.gl/2eywzyym4LV2hj85A",
+  region: "kanto",
+  category: "relaxation-wellness",
+  subCategory: "spas"
+},
+{
+  id: "times-spa-resta-ikebukuro",
+  name: "Times Spa Resta (Ikebukuro)",
+  description: "Relaxing rooftop spa with open-air baths, salt sauna, and lounge chairs overlooking the Ikebukuro skyline.",
+  image: "/images/places/times-spa-resta-ikebukuro-tokyo.jpg",
+  mapLink: "https://maps.app.goo.gl/rov6C9VQjBp5YEAR6",
+  region: "kanto",
+  category: "relaxation-wellness",
+  subCategory: "spas"
+},
+{
+  id: "azabu-juban-spa",
+  name: "Ledian Spa Azabu Juban (Minato, Tokyo)",
+  description: "Luxury Chill Time at the high-class sauna in Azabujuban, central Tokyo, offers a higher grade sauna experience in a luxurious space.",
+  image: "/images/places/ledian-spa-azabujuban-tokyo.webp",
+  mapLink: "https://maps.app.goo.gl/jPD2jrRixGX9WoEp6",
+  region: "kanto",
+  category: "relaxation-wellness",
+  subCategory: "spas"
+},
+
+// Kanto Region - Relaxation & Wellness - Hot Springs (Onsen)
+{
+  id: "kusatsu-onsen-gunma",
+  name: "Kusatsu Onsen (Gunma)",
+  description: "Renowned for its sulfur-rich waters and iconic Yubatake hot water fields, offering traditional inns and public baths.",
+  image: "/images/places/kusatsu-onsen-hotspring-gunma.jpg",
+  mapLink: "https://maps.app.goo.gl/kusatsuOnsenSample",
+  region: "kanto",
+  category: "relaxation-wellness",
+  subCategory: "hot-springs-onsen"
+},
+{
+  id: "ikaho-onsen-gunma",
+  name: "Ikaho Onsen (Gunma)",
+  description: "Famous for its stone steps lined with inns and shops, featuring both 'golden' and 'silver' hot spring waters.",
+  image: "/images/places/ikaho-onsen-hotspring-gunma.jpg",
+  mapLink: "https://maps.app.goo.gl/ikahoOnsenSample",
+  region: "kanto",
+  category: "relaxation-wellness",
+  subCategory: "hot-springs-onsen"
+},
+{
+  id: "hakone-yumoto-onsen",
+  name: "Hakone Yumoto Onsen (Kanagawa)",
+  description: "A gateway to Hakone, known for scenic mountain vistas, numerous ryokans with private open-air baths, and easy train access.",
+  image: "/images/places/hakone-yumoto-onsen-hotspring-tokyo.jpg",
+  mapLink: "https://maps.app.goo.gl/hakoneYumotoSample",
+  region: "kanto",
+  category: "relaxation-wellness",
+  subCategory: "hot-springs-onsen"
+},
+{
+  id: "yugawara-onsen-kanagawa",
+  name: "Yugawara Onsen (Kanagawa)",
+  description: "Historic hot spring town near the coast, boasting soothing alkaline waters and a peaceful atmosphere.",
+  image: "/images/places/yugawara-onsen-hotspring-kanagawa.jpeg",
+  mapLink: "https://maps.app.goo.gl/yugawaraSample",
+  region: "kanto",
+  category: "relaxation-wellness",
+  subCategory: "hot-springs-onsen"
+},
+{
+  id: "minakami-onsen-gunma",
+  name: "Minakami Onsen (Gunma)",
+  description: "Mountainous region offering rafting in summer, skiing in winter, and restorative hot springs year-round.",
+  image: "/images/places/minakami-onsen-gunma.jpg",
+  mapLink: "https://maps.app.goo.gl/minakamiOnsenSample",
+  region: "kanto",
+  category: "relaxation-wellness",
+  subCategory: "hot-springs-onsen"
+},
+{
+  id: "takaragawa-onsen-gunma",
+  name: "Takaragawa Onsen (Gunma)",
+  description: "Riverside rotemburo known for its spacious open-air baths with stunning natural surroundings.",
+  image: "/images/places/takaragawa-onsen-gunma-hotspring.jpg",
+  mapLink: "https://maps.app.goo.gl/takaragawaOnsenSample",
+  region: "kanto",
+  category: "relaxation-wellness",
+  subCategory: "hot-springs-onsen"
+},
+{
+  id: "nasu-onsen-tochigi",
+  name: "Nasu Onsen (Tochigi)",
+  description: "Highland resort area with multiple hot spring sources, close to hiking trails and seasonal attractions.",
+  image: "/images/places/nasu-onsen-tochigi.jpg",
+  mapLink: "https://maps.app.goo.gl/nasuOnsenSample",
+  region: "kanto",
+  category: "relaxation-wellness",
+  subCategory: "hot-springs-onsen"
+},
+
+// Kanto Region - Sports & Active - Skiing & Snowboarding
+{
+  id: "kawaba-ski-resort",
+  name: "Kawaba Ski Resort",
+  description: "Family-friendly slopes in Gunma, scenic mountain views, easy day trip from Tokyo.",
+  image: "/images/places/kawaba-ski-resort-snowboarding.webp",
+  mapLink: "https://maps.app.goo.gl/KawabaSkiSample",
+  region: "kanto",
+  category: "sports-active",
+  subCategory: "skiing-snowboarding"
+},
+{
+  id: "hunter-mountain-shiobara",
+  name: "Hunter Mountain Shiobara",
+  description: "Wide runs in Tochigi, popular for beginners and families, seasonal snow festivals.",
+  image: "/images/places/hunter-mountain-ski-snowboarding-tochigi.webp",
+  mapLink: "https://maps.app.goo.gl/HunterMtSample",
+  region: "kanto",
+  category: "sports-active",
+  subCategory: "skiing-snowboarding"
+},
+{
+  id: "tambara-ski-park",
+  name: "Tambara Ski Park",
+  description: "Known for powder snow in Gunma, early opening season, a variety of lifts and courses.",
+  image: "public/images/places/tambara-ski-park-gunma.webp",
+  mapLink: "https://maps.app.goo.gl/TambaraSkiSample",
+  region: "kanto",
+  category: "sports-active",
+  subCategory: "skiing-snowboarding"
+},
+{
+  id: "manza-onsen-ski-area",
+  name: "Manza Onsen Ski Area",
+  description: "High-altitude slopes with adjacent hot springs, located in Gunma’s volcanic region.",
+  image: "/images/places/manza-onsen-ski-gunma.jpg",
+  mapLink: "https://maps.app.goo.gl/ManzaSkiSample",
+  region: "kanto",
+  category: "sports-active",
+  subCategory: "skiing-snowboarding"
+},
+{
+  id: "marunuma-kogen",
+  name: "Marunuma Kogen",
+  description: "Gunma resort with extensive runs and scenic tree-lined courses, good for intermediate skiers.",
+  image: "/images/places/marunuma-kogen-gunma.webp",
+  mapLink: "https://maps.app.goo.gl/MarunumaSample",
+  region: "kanto",
+  category: "sports-active",
+  subCategory: "skiing-snowboarding"
+},
+{
+  id: "mt-jeans-nasu",
+  name: "Mt. Jeans Nasu",
+  description: "Tochigi ski area offering gentle slopes, family areas, and gondola with panoramic views.",
+  image: "/images/places/mt-jeans-nasu-tochigi.jpg",
+  mapLink: "https://maps.app.goo.gl/MtJeansSample",
+  region: "kanto",
+  category: "sports-active",
+  subCategory: "skiing-snowboarding"
 },
 
 // Kanto Region - Transportation - Air Travel

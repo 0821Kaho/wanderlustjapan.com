@@ -79,7 +79,7 @@ export default function ActivitiesClient({
                     className="flex items-center justify-center gap-1.5 sm:gap-2 rounded-full bg-green-600 px-3 sm:px-4 py-2 sm:py-2.5 text-sm font-medium text-white transition hover:bg-green-700"
                   >
                     <MessageCircle className="h-4 w-4" />
-                    Help? (10% fee)
+                   Concierge
                   </button>
                 </div>
               </div>

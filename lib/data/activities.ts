@@ -79,6 +79,16 @@ export const ACTIVITIES_DATA: Record<string, Activity[]> = {
       "duration": "4 hours",
       "bookingUrl": "https://helloactivity.com/tokyo/ar-W08100130400/to-0591-0486816255/?a8=gXUI7X-RfpiCXoFwU9lFpWFIAobcNpFMA9lX8.wpLM1RfoUSlziR8oiykobt4tiGBMOpwAU5BXUIns00000023946001",
       "helpUrl": "https://wa.me/1234567890"
+    },
+    {
+      id: "asakusa-kimono-tour",
+      name: "Hands-Free Kimono Asakusa Tour",
+      description: "Enjoy an effortless sightseeing tour in Asakusa with a full kimono rental package that includes hair styling and dressing. Simply choose from a diverse range of kimonos, get professionally styled, and capture memorable moments in our in-house studio before exploring the charming streets of Asakusa.",
+      image: "",
+      price: { amount: 4950, currency: "JPY" },
+      duration: "Approximately 1 hour",
+      bookingUrl: "https://helloactivity.com/tokyo/ar-W08100130400/to-JP14-00001003/?a8=gXUI7X-RfpiCXoFwU9lFpWFIAobcNpFMA9lX8.wpLM1RfoUSlziR8oiykobt4tiGBMOpwAU5BXUIns00000023946001",
+      helpUrl: "https://wa.me/1234567890"
     }
     
   ]

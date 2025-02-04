@@ -17,10 +17,10 @@ export default function RegionsPage() {
 
       <div className="mx-auto max-w-6xl px-6 sm:px-8 pb-8 sm:pb-12">
         {/* Heading inside main content, similar to "Nature & Outdoor" */}
-        <h1 className="mb-2 sm:mb-3 text-center text-2xl sm:text-3xl font-bold text-white">
+        <h1 className="mb-2 sm:mb-3 text-center text-1xl sm:text-2xl font-bold text-white">
           Where would you like to go?
         </h1>
-        <p className="mb-8 sm:mb-10 text-center text-base sm:text-lg text-gray-300">
+        <p className="mb-6 sm:mb-8 text-center text-sm sm:text-base text-gray-300">
           Choose your destination in Japan
         </p>
 

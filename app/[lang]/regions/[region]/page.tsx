@@ -76,10 +76,10 @@ export default function RegionDetailPage() {
           ← Back
         </Link>
 
-        <h1 className="mb-2 text-center text-3xl sm:text-4xl font-bold">
+        <h1 className="mb-2 sm:mb-3 text-center text-1xl sm:text-2xl font-bold text-white">
           {region.name}
         </h1>
-        <p className="mb-6 text-center text-base sm:text-lg text-gray-300">
+        <p className="mb-6 sm:mb-8 text-center text-sm sm:text-base text-gray-300">
           Choose a category below
         </p>
 
