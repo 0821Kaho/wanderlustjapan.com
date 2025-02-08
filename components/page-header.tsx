@@ -30,7 +30,7 @@ export default function PageHeader() {
           >
             <HelpCircle className="h-4 w-4 sm:h-5 sm:w-5" />
             <span className="hidden sm:inline">
-             Concierge
+             Support
             </span>
           </button>
         </div>

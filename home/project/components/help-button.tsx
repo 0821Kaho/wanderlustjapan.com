@@ -8,9 +8,9 @@ const HelpButton = () => {
 
   const handleMessaging = (platform: 'whatsapp' | 'messenger' | 'line') => {
     const urls = {
-      whatsapp: 'https://wa.me/819012345678',
+      whatsapp: 'https://wa.me/818012783812',
       messenger: 'https://m.me/wanderlustjapan.official',
-      line: 'https://line.me/R/ti/p/@wanderlustjapan'
+      line: 'https://line.me/R/ti/p/@beu3529l'
     };
     window.open(urls[platform], '_blank', 'noopener,noreferrer');
   };
@@ -30,7 +30,7 @@ const HelpButton = () => {
           ) : (
             <>
               <HelpCircle className="h-4 w-4 sm:h-5 sm:w-5" />
-              <span>Help? (10% fee)</span>
+              <span>Support</span>
             </>
           )}
         </button>

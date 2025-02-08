@@ -6,7 +6,7 @@
     "search": "Search",
     "searchPlaceholder": "Search places, activities...",
     "noResults": "No results found",
-    "help": "Help? (10% fee)",
+    "help": "Support",
     "close": "Close"
   },
   "navigation": {
@@ -25,6 +25,6 @@
     "duration": "Duration",
     "price": "Price",
     "bookNow": "Book Now",
-    "help": "Help? (10% fee)"
+    "help": "Support"
   }
 }

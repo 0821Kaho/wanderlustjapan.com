@@ -10,7 +10,7 @@ export const ACTIVITIES_DATA: Record<string, Activity[]> = {
       price: { amount: 15000, currency: "JPY" },
       duration: "8 hours",
       bookingUrl: "https://example.com/book",
-      helpUrl: "https://wa.me/1234567890"
+      helpUrl: "https://wa.me/818012783812"
     },
     {
       id: "fuji-photography",
@@ -20,7 +20,7 @@ export const ACTIVITIES_DATA: Record<string, Activity[]> = {
       price: { amount: 12000, currency: "JPY" },
       duration: "4 hours",
       bookingUrl: "https://example.com/book",
-      helpUrl: "https://wa.me/1234567890"
+      helpUrl: "https://wa.me/818012783812"
     }
   ],
   "mount-takao": [
@@ -32,7 +32,7 @@ export const ACTIVITIES_DATA: Record<string, Activity[]> = {
       price: { amount: 5000, currency: "JPY" },
       duration: "4 hours",
       bookingUrl: "https://example.com/book",
-      helpUrl: "https://wa.me/1234567890"
+      helpUrl: "https://wa.me/818012783812"
     },
     {
       id: "takao-temple-tour",
@@ -42,7 +42,7 @@ export const ACTIVITIES_DATA: Record<string, Activity[]> = {
       price: { amount: 6000, currency: "JPY" },
       duration: "3 hours",
       bookingUrl: "https://example.com/book",
-      helpUrl: "https://wa.me/1234567890"
+      helpUrl: "https://wa.me/818012783812"
     }
   ],
   "sensoji-asakusa": [
@@ -54,7 +54,7 @@ export const ACTIVITIES_DATA: Record<string, Activity[]> = {
       price: { amount: 4000, currency: "JPY" },
       duration: "2 hours",
       bookingUrl: "https://example.com/book",
-      helpUrl: "https://wa.me/1234567890"
+      helpUrl: "https://wa.me/818012783812"
     },
     {
       id: "asakusa-food-tour",
@@ -64,7 +64,7 @@ export const ACTIVITIES_DATA: Record<string, Activity[]> = {
       price: { amount: 8000, currency: "JPY" },
       duration: "3 hours",
       bookingUrl: "https://example.com/book",
-      helpUrl: "https://wa.me/1234567890"
+      helpUrl: "https://wa.me/818012783812"
     }
   ]
 };

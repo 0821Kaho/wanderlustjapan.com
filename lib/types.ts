@@ -25,7 +25,7 @@ export type Place = {
   name: string;
   description: string;
   image: string;
-  mapLink: string;
+  mapLink?: string;
   region: string;
   category: string;
   subCategory: string;

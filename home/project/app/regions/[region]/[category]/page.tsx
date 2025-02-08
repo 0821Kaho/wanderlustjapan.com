@@ -1,6 +1,6 @@
-import { CATEGORIES, REGIONS, SUBCATEGORIES } from '@/lib/constants';
-import { ArrowRight } from 'lucide-react';
-import Link from 'next/link';
+import { CATEGORIES, REGIONS, SUBCATEGORIES } from "@/lib/constants";
+import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export async function generateStaticParams() {
   return REGIONS.flatMap((region) =>
@@ -18,15 +18,16 @@ export default function CategoryPage({
 }) {
   const region = REGIONS.find((r) => r.id === params.region);
   const category = CATEGORIES.find((c) => c.id === params.category);
-  const subcategories = SUBCATEGORIES[params.category as keyof typeof SUBCATEGORIES] || [];
+  const subcategories =
+    SUBCATEGORIES[params.category as keyof typeof SUBCATEGORIES] || [];
 
   if (!region || !category) {
     return <div>Category not found</div>;
   }
 
   return (
-    <main className="min-h-screen bg-[#001B44] px-4 py-16">
-      <div className="mx-auto max-w-3xl">
+    <main className="min-h-screen bg-[#001B44] px-4 py-8 sm:py-16">
+      <div className="mx-auto max-w-7xl">
         <Link
           href={`/regions/${region.id}`}
           className="mb-8 inline-flex items-center text-sm text-white/80 hover:text-white"

@@ -38,12 +38,15 @@ export default function RegionContent({ region }: { region: Region }) {
   return (
     <main className="min-h-screen bg-[#001B44] pt-20 sm:pt-24 pb-8 sm:pb-12">
       <div className="mx-auto max-w-6xl px-6 sm:px-8">
+<<<<<<< HEAD
         <Link
           href="/regions"
           className="mb-6 inline-flex items-center text-sm text-white/80 hover:text-white"
         >
           ← Back to Regions
         </Link>
+=======
+>>>>>>> b16b470 (Initial commit in local repo)
 
         <h1 className="mb-2 text-center text-3xl sm:text-4xl font-bold text-white">
           Explore {region.name}
