@@ -24,14 +24,12 @@ export default function ActivitiesClient({
   return (
     <main className="min-h-screen bg-[#001B44] px-4 py-8 sm:py-16">
       <div className="mx-auto max-w-7xl">
-
         <h1 className="mb-3 sm:mb-4 text-center text-3xl sm:text-4xl font-bold text-white">
           Activities
         </h1>
         <p className="mb-8 sm:mb-12 text-center text-base sm:text-lg text-gray-300">
           Choose from our curated activities
         </p>
-
         <div className="grid gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {activities.map((activity) => (
             <div

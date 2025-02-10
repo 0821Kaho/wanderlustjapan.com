@@ -10,7 +10,6 @@ import {
   ShoppingBag,
   Building2,
   Users,
-  // 'Space' is named 'Spa' here; you might rename or choose another icon
   Space as Spa,
   Activity,
   Train,
@@ -38,27 +37,15 @@ export default function RegionContent({ region }: { region: Region }) {
   return (
     <main className="min-h-screen bg-[#001B44] pt-20 sm:pt-24 pb-8 sm:pb-12">
       <div className="mx-auto max-w-6xl px-6 sm:px-8">
-<<<<<<< HEAD
-        <Link
-          href="/regions"
-          className="mb-6 inline-flex items-center text-sm text-white/80 hover:text-white"
-        >
-          ← Back to Regions
-        </Link>
-=======
->>>>>>> b16b470 (Initial commit in local repo)
-
         <h1 className="mb-2 text-center text-3xl sm:text-4xl font-bold text-white">
           Explore {region.name}
         </h1>
         <p className="mb-8 text-center text-base sm:text-lg text-gray-300">
           Choose a category to discover activities
         </p>
-
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {CATEGORIES.map((category) => {
             const IconComponent = iconMap[category.icon as keyof typeof iconMap];
-
             return (
               <Link
                 key={category.id}
