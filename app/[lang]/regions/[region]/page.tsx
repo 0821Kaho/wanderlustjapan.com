@@ -33,16 +33,10 @@ export default function RegionDetailPage() {
     );
   }
 
-<<<<<<< HEAD
-  // Use brand color (blue) for icons
-  function getCategoryIcon(categoryId: string) {
-    const baseClasses = "h-5 w-5 text-blue-600 transition";
-=======
   // Smaller icon size
   function getCategoryIcon(categoryId: string) {
     // h-4 w-4 instead of h-5 w-5
     const baseClasses = "h-4 w-4 text-blue-600 transition";
->>>>>>> b16b470 (Initial commit in local repo)
     switch (categoryId) {
       case "nature-outdoor":
         return <Mountain className={baseClasses} />;
@@ -76,7 +70,6 @@ export default function RegionDetailPage() {
   return (
     <main className="min-h-screen bg-[#001B44] pt-20 sm:pt-24 pb-8 sm:pb-12 text-white">
       <div className="mx-auto max-w-3xl px-6 sm:px-8">
-<<<<<<< HEAD
         <Link
           href={`/${lang}/regions`}
           className="mb-6 inline-flex items-center text-sm text-white/80 hover:text-white"
@@ -84,8 +77,6 @@ export default function RegionDetailPage() {
           ← Back
         </Link>
 
-=======
->>>>>>> b16b470 (Initial commit in local repo)
         <h1 className="mb-2 sm:mb-3 text-center text-1xl sm:text-2xl font-bold text-white">
           {region.name}
         </h1>
@@ -93,36 +84,19 @@ export default function RegionDetailPage() {
           Choose a category below
         </p>
 
-<<<<<<< HEAD
         {/* Map over your CATEGORIES for this region */}
         <div className="grid gap-4">
-=======
-        {/* Tighter gap on mobile: gap-3 sm:gap-4 */}
-        <div className="grid gap-3 sm:gap-4">
->>>>>>> b16b470 (Initial commit in local repo)
           {CATEGORIES.map((category) => {
             const icon = getCategoryIcon(category.id);
             return (
               <Link
                 key={category.id}
                 href={`/${lang}/regions/${regionId}/${category.id}`}
-<<<<<<< HEAD
                 className="block rounded-lg bg-white p-4 shadow-lg transition hover:shadow-xl text-gray-900"
               >
                 <div className="flex items-center gap-3">
                   {icon}
                   <span className="text-lg font-semibold">{category.name}</span>
-=======
-                // Less padding: p-3 sm:p-4
-                className="block rounded-lg bg-white p-3 sm:p-4 shadow-lg transition hover:shadow-xl text-gray-900"
-              >
-                <div className="flex items-center gap-2 sm:gap-3">
-                  {icon}
-                  {/* Smaller text: text-sm on mobile, text-base on larger */}
-                  <span className="text-sm sm:text-base font-semibold">
-                    {category.name}
-                  </span>
->>>>>>> b16b470 (Initial commit in local repo)
                 </div>
               </Link>
             );
@@ -132,7 +106,3 @@ export default function RegionDetailPage() {
     </main>
   );
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> b16b470 (Initial commit in local repo)
