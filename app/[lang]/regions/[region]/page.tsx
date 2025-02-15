@@ -28,15 +28,15 @@ export default function RegionDetailPage() {
   if (!region) {
     return (
       <main className="min-h-screen bg-[#001B44] text-white p-8">
-        <h1 className="text-2xl font-bold mb-4">Region not found</h1>
+        <h1 className="text-xl font-bold mb-4">Region not found</h1>
       </main>
     );
   }
 
   // Smaller icon size
   function getCategoryIcon(categoryId: string) {
-    // h-4 w-4 instead of h-5 w-5
-    const baseClasses = "h-4 w-4 text-blue-600 transition";
+    // h-3 w-3 instead of h-4 w-4
+    const baseClasses = "h-3 w-3 text-blue-600 transition";
     switch (categoryId) {
       case "nature-outdoor":
         return <Mountain className={baseClasses} />;
@@ -68,16 +68,9 @@ export default function RegionDetailPage() {
   }
 
   return (
-    <main className="min-h-screen bg-[#001B44] pt-20 sm:pt-24 pb-8 sm:pb-12 text-white">
-      <div className="mx-auto max-w-3xl px-6 sm:px-8">
-        <Link
-          href={`/${lang}/regions`}
-          className="mb-6 inline-flex items-center text-sm text-white/80 hover:text-white"
-        >
-          ← Back
-        </Link>
-
-        <h1 className="mb-2 sm:mb-3 text-center text-1xl sm:text-2xl font-bold text-white">
+    <main className="min-h-screen bg-[#001B44] pt-16 sm:pt-20 pb-6 sm:pb-10 text-white">
+      <div className="mx-auto max-w-3xl px-4 sm:px-6">
+        <h1 className="mb-2 sm:mb-3 text-center text-lg sm:text-xl font-bold text-white">
           {region.name}
         </h1>
         <p className="mb-6 sm:mb-8 text-center text-sm sm:text-base text-gray-300">
@@ -85,18 +78,18 @@ export default function RegionDetailPage() {
         </p>
 
         {/* Map over your CATEGORIES for this region */}
-        <div className="grid gap-4">
+        <div className="grid gap-3">
           {CATEGORIES.map((category) => {
             const icon = getCategoryIcon(category.id);
             return (
               <Link
                 key={category.id}
                 href={`/${lang}/regions/${regionId}/${category.id}`}
-                className="block rounded-lg bg-white p-4 shadow-lg transition hover:shadow-xl text-gray-900"
+                className="block rounded-lg bg-white p-3 shadow-md transition hover:shadow-lg text-gray-900"
               >
-                <div className="flex items-center gap-3">
+                <div className="flex items-center gap-2">
                   {icon}
-                  <span className="text-lg font-semibold">{category.name}</span>
+                  <span className="text-sm font-medium">{category.name}</span>
                 </div>
               </Link>
             );

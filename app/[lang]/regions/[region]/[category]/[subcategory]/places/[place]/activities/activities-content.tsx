@@ -24,13 +24,6 @@ export default function ActivitiesContent({
   return (
     <main className="min-h-screen bg-[#001B44] px-4 py-16">
       <div className="mx-auto max-w-7xl">
-        <Link
-          href={`/regions/${region.id}/${category.id}/${subcategory.id}/places`}
-          className="mb-8 inline-flex items-center gap-2 text-sm text-white/80 hover:text-white"
-        >
-          <ArrowLeft className="h-4 w-4" />
-          Back to Places
-        </Link>
 
         <h1 className="mb-4 text-center text-4xl font-bold text-white">
           Activities

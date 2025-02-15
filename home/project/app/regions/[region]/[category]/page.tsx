@@ -28,12 +28,6 @@ export default function CategoryPage({
   return (
     <main className="min-h-screen bg-[#001B44] px-4 py-8 sm:py-16">
       <div className="mx-auto max-w-7xl">
-        <Link
-          href={`/regions/${region.id}`}
-          className="mb-8 inline-flex items-center text-sm text-white/80 hover:text-white"
-        >
-          ← Back
-        </Link>
 
         <h1 className="mb-4 text-center text-4xl font-bold text-white">
           {category.name}

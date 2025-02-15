@@ -30,14 +30,6 @@ export default function PlacesClient({
 
   return (
     <div>
-      {/* “Back” link to region/category page */}
-      <Link
-        href={`/regions/${region.id}/${category.id}`}
-        className="mb-4 inline-flex items-center gap-2 text-sm text-white/80 hover:text-white"
-      >
-        <ArrowLeft className="h-4 w-4" />
-        Back
-      </Link>
 
       <div className="grid gap-6 sm:gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {places.map((place) => (
@@ -119,7 +111,7 @@ function PlaceCard({
                        text-sm font-medium text-white
                        transition hover:bg-blue-700"
           >
-            <MapPin className="h-4 w-4" />
+            <MapPin className="h-3 w-3" />
             View Map
           </button>
 
@@ -132,7 +124,7 @@ function PlaceCard({
                          text-sm font-medium text-white
                          transition hover:bg-green-700"
             >
-              <ExternalLink className="h-4 w-4" />
+              <ExternalLink className="h-3 w-3" />
               Book Now
             </button>
           ) : (

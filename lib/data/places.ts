@@ -26,7 +26,7 @@ export const PLACES_DATA: Place[] = [
     id: "mount-kintoki-hakone",
     name: "Mount Kintoki",
     description: "Mount Kintoki, the highest peak of Hakone outer rim, is a popular hiking destination—and it happens to be our most sought-after tour. We tailor the pace to each participant, paying close attention to weather conditions and answering all your mountain hiking questions. While the ridgeline from Mount Kintoki to Otome Pass offers the most substantial challenge, we can also arrange shorter routes, such as a round trip from Kintoki Shrine, depending on your preference. After leaving Kintoki Shrine, you’ll pass by the legendary boulder said to have sheltered the folk hero Kintaro from the evening dew. You can spot azaleas, Japanese andromeda, cherry blossoms, and beech trees. In spring, look for violets; in autumn, watch for the Matsumushiso bloom. Enjoy a rest at the mountaintop hut, where you can buy udon (around 1,000 yen). On hot days, you might even find ice pops! On clear days, Mt. Fuji stands directly before you—a major draw for many hikers. In autumn and winter, there’s a good chance of seeing its iconic snowcapped peak. You may also catch glimpses of Sagami Bay and Suruga Bay. Feast your eyes on Owakudani’s billowing volcanic steam and take in sweeping views of Hakone’s central crater hills and Lake Ashi.",
-    image: "public/images/places/mount-kintoki-yama-hakone.jpeg",
+    image: "/images/places/mount-kintoki-yama-hakone.jpeg",
     mapLink: "https://maps.app.goo.gl/pUwcq9edeCns3ouD7",
     region: "kanto",
     category: "nature-outdoor",

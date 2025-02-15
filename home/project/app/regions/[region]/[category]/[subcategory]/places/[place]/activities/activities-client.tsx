@@ -25,14 +25,6 @@ export default function ActivitiesClient({
   return (
     <main className="min-h-screen bg-[#001B44] pt-20 sm:pt-24 pb-8 sm:pb-12 px-4 text-white">
       <div className="mx-auto max-w-7xl">
-        {/* Back link */}
-        <Link
-          href={`/regions/${region.id}/${category.id}/${subcategory.id}/places`}
-          className="mb-6 sm:mb-8 inline-flex items-center gap-2 text-sm text-white/80 hover:text-white"
-        >
-          <ArrowLeft className="h-4 w-4" />
-          Back
-        </Link>
 
         {/* Heading */}
         <h1 className="mb-3 sm:mb-4 text-center text-3xl sm:text-4xl font-bold">

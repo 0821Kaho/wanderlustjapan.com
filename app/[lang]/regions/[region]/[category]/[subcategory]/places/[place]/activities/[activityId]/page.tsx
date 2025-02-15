@@ -35,14 +35,6 @@ export default function ActivityDetailPage() {
   return (
     <main className="min-h-screen bg-[#001B44] px-4 py-8 sm:py-16 text-white">
       <div className="mx-auto max-w-3xl">
-        {/* Back ボタン */}
-        <button
-          onClick={() => router.back()}
-          className="mb-6 inline-flex items-center gap-2 text-sm text-white/80 hover:text-white"
-        >
-          <ArrowLeft className="h-4 w-4" />
-          Back
-        </button>
 
         <h1 className="mb-4 text-center text-3xl sm:text-4xl font-bold">
           {activity.name}
